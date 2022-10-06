@@ -57,7 +57,7 @@ jobs:
         run: sbt ++${{ matrix.scala }} clean test
 
       - name: Compress target directories
-        run: tar cf targets.tar target collectioncompat-docs/target project/target
+        run: tar cf targets.tar target project/target
 
       - name: Upload target directories
         uses: actions/upload-artifact@v2
