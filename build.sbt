@@ -38,16 +38,6 @@ lazy val collectioncompat =
     .in(file("."))
     .settings(commonSettings)
 
-lazy val docs =
-  project
-    .in(file("collectioncompat-docs"))
-    .settings(
-      publish / skip := true,
-      mdocSettings,
-      ScalaUnidoc / unidoc / unidocProjectFilter := inAnyProject -- inProjects(noDocProjects: _*)
-    )
-    .enablePlugins(MdocPlugin, DocusaurusPlugin, ScalaUnidocPlugin)
-
 lazy val noDocProjects = Seq[ProjectReference]()
 
 lazy val mdocSettings = Seq(
