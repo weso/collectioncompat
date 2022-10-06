@@ -1,37 +1,20 @@
-# Utils
+# CollectionCompat
 
-Scala utilities
-
-[![Build Status](https://github.com/weso/utils/actions/workflows/ci.yml/badge.svg)](https://github.com/weso/utils/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/weso/utils/branch/master/graph/badge.svg)](https://codecov.io/gh/weso/utils)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/es.weso/utils_2.13/badge.svg)](https://maven-badges.herokuapp.com/maven-central/es.weso/utils_2.13)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92aef2157e844f48bca96e44b38bb0a7)](https://www.codacy.com/gh/weso/utils?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=weso/utils&amp;utm_campaign=Badge_Grade)
+Scala compatibility utilities for Collections
 
 ## Introduction
 
-This project contains some common utilities in Scala.
+This project contains some utilities to work with Scala collections in a way that is compatible with Scala 2.12, 2.13 and 3
 
 ## Installation and compilation
 
-The project uses [sbt](http://www.scala-sbt.org/) for compilation as well as Java 1.8.
+The project uses [sbt](http://www.scala-sbt.org/) for compilation.
 
 * `sbt test` compiles and runs the tests
 
 ## Author & contributors
 
 * Author: [Jose Emilio Labra Gayo](http://labra.weso.es)
-
-Contributors:
-
-* [Eric Prud'hommeaux](https://www.w3.org/People/Eric/)
-* [Bogdan Roman](https://github.com/bogdanromanx)
-* [Toni Cebrían](http://www.tonicebrian.com/)
-* [Andrew Berezovskyi](https://github.com/berezovskyi)
-
-## Adopters
-
-* [RDFShape](http://rdfshape.weso.es): An online demo powered by this library.
-* [Wikishape](http://wikishape.weso.es): An online demo powered by this library for Wikidata.
 
 ## Contribution
 
@@ -44,9 +27,11 @@ pull request to add more features or [submit issues](https://github.com/weso/uti
 This project uses [the sbt ci release](https://github.com/olafurpg/sbt-ci-release) plugin for publishing to [OSS Sonatype](https://oss.sonatype.org/).
 
 ##### SNAPSHOT Releases
+
 Open a PR and merge it to watch the CI release a -SNAPSHOT version
 
 ##### Full Library Releases
+
 1. Increment the version number in `version.sbt` to the desired release version number.
 2. Commit and push this change with a message like "blah blah version 0.x.x".
 3. Push a tag and watch the CI do a regular release
